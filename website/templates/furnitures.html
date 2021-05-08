@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>{% block title %}RAM{% endblock %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    <!-- bootstrap css -->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{url_for('static', filename='images/fevicon.png')}}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css//owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+
+<body>
+    <!--header section start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="logo"><img src="{{url_for('static', filename='images/logo.png')}}"></div>
+                </div>
+
+                <div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" href="/index">Home<span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about">About</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/company">Testimonials</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/furnitures">Services</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact Us</a></li>
+                                {% if user.is_authenticated %}
+
+                                <li class="nav-item">
+                                    <a class="nav-link" id="logout" href="/logout"><i class="fa fa-fw fa-user"></i>Logout</a></li>{% else %}
+                                <li class="nav-item">
+                                    <a class="nav-link" id="login" href="/login"><i class="fa fa-fw fa-user"></i>Login</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-item nav-link" id="signUp" href="/sign-up"><i class="fa fa-fw fa-user"></i>Sign Up</a></li> {% endif %}
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- header section end  -->
+    <!-- our furniture section start -->
+    <div class="our_furniture_section layout_padding">
+        <div class="container">
+            <h1 class="about_taital">Our <span style="background-color: #6e4975; color: #fff; padding: 0px 5px;">Services</span></h1>
+            <p class="market_text">Book highly experienced in-house professionals & get your service done, Instantly.</p>
+        </div>
+    </div>
+    <div class="our_section_2">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="images_bt">
+                    <div class="image_left">
+                        <button class="seemore_bt">SEE MORE</button>
+                    </div>
+                    <div class="image_right">
+                        <div class="image_9"><img src="images/img-9.png"></div>
+                        <div class="new_text">NEW DESIGN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="image"><img src="images/img-4.png"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="image"><img src="images/img-5.png"></div>
+            </div>
+        </div>
+        <div class="images_section_2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="image_6"><img src="images/img-6.png"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="image_6"><img src="images/img-7.png"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="image_6"><img src="images/img-8.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our furniture section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-12">
+                    <div class="useful_main border_right0">
+                        <h2 class="useful_text">Menus</h2>
+                        <ul>
+                            <li><a href="/index">Home</a></li>
+                            <li><a href="/about">About </a></li>
+                            <li><a href="/company">Testimonials</a></li>
+                            <li><a href="/furnitures">Services</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <h2 class="useful_text">Address</h2>
+                    <ul class="location">
+                        <li><img src="{{url_for('static', filename='images/map-icon.png')}}">India</li>
+
+                        <li><img src="{{url_for('static', filename='images/call-icon.png')}}"><a href="company.html">+71 89078493</a></li>
+                        <li><img src="{{url_for('static', filename='images/email-icon.png')}}"><a href="furnitures.html">ram@gmail.com</a></li>
+
+                    </ul>
+
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <h2 class="useful_text">Newsletter</h2>
+                    <div class="form-group">
+                        <input type="text" class="address_send" placeholder="Address" name="Email">
+                        <button class="subscribe_bt">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright">
+        <div class="container">
+            <!-- <p class="copyright_text">Copyright 2019 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p> -->
+        </div>
+    </div>
+    <!-- copyright section end -->
+
+    <!-- Javascript files-->
+    <script type="text/javascript" src="{{url_for('static', filename='jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='bootstrap.bundle.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='jquery-3.0.0.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='plugin.js')}}"></script>
+    <!-- sidebar -->
+    <script type="text/javascript" src="{{url_for('static', filename='jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='custom.js')}}"></script>
+    <!-- javascript -->
+    <script type="text/javascript" src="{{url_for('static', filename='owl.carousel.js')}}"></script>
+    <script type="text/javascript" src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                    $(".fancybox").fancybox({
+                        openEffect: "none",
+                        closeEffect: "none"
+                    });
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
