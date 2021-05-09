@@ -1,5 +1,11 @@
 # RAM: Ready to Assist Many
 
+
+## Link for our Website:
+https://ram-frosthack.herokuapp.com/
+
+
+
 ## Setup & Installtion
 
 Make sure you have the latest version of Python installed.
@@ -22,13 +28,8 @@ python main.py
 
 Go to `http://127.0.0.1:5000`
 
-
 ## Video preview link:
 https://drive.google.com/drive/folders/1PhbYpZLLurlY77vR7fOAq_bgzbxy8--X?usp=sharing
-
-
-## Link our website:
-https://ram-frosthack.herokuapp.com/
 
 ## Platform Used:
 ### Front-End
