@@ -23,22 +23,22 @@ python main.py
 Go to `http://127.0.0.1:5000`
 
 
-##Video preview link:
+## Video preview link:
 https://drive.google.com/drive/folders/1PhbYpZLLurlY77vR7fOAq_bgzbxy8--X?usp=sharing
 
 
-##Link our website:
+## Link our website:
 https://ram-frosthack.herokuapp.com/
 
-##Platform Used:
-###Front-End
+## Platform Used:
+### Front-End
 (i) HTML5
 (ii) CSS3
 (iii) JavaScript
 
-###Back-End
+### Back-End
 (i) Flask(Python)
 
-##Reference links:
+## Reference links:
  https://github.com/techwithtim/Flask-...
  https://www.free-css.com/free-css-templates/page265/woodo
