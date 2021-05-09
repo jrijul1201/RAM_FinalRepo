@@ -15,6 +15,8 @@ https://drive.google.com/drive/folders/1PhbYpZLLurlY77vR7fOAq_bgzbxy8--X?usp=sha
 ### Back-End
 (i) Flask(Python)
 
+### Deployment
+(i) Heroku
 ## Reference links and Credits:
 https://github.com/techwithtim/Flask-Web-App-Tutorial
  
