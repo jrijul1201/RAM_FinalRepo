@@ -77,7 +77,7 @@ def furnitures():
         return render_template("furnitures.html", user=current_user)
     
 
-@auth.route('/index', methods=['GET', 'POST'])
+@auth.route('/', methods=['GET', 'POST'])
 def index():
         return render_template("index.html", user=current_user)
     
