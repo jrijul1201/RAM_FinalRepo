@@ -6,6 +6,8 @@ https://ram-frosthack.herokuapp.com/
 ## Video preview link:
 https://drive.google.com/drive/folders/1PhbYpZLLurlY77vR7fOAq_bgzbxy8--X?usp=sharing
 
+https://www.youtube.com/watch?v=TKn4toNaSWU&ab_channel=AryakaChoudhary
+
 ## Platform Used:
 ### Front-End
 (i) HTML5
